@@ -137,11 +137,7 @@ nav ul {
     margin: 4.5em 0em .5em 0em;
     padding-left: 0em;
     }
-article {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background-color: #F8F0E3;
-    }
+
 footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -158,6 +154,12 @@ div.menuimg{
 }
 
 @media screen and (min-width:60em){
+    
+article {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #F8F0E3;
+    }
 
 body {
     background-color: #FFCC7D  
