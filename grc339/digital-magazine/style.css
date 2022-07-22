@@ -21,6 +21,10 @@ img {
     padding: 1em 0em 0em 0em;
 }
 
+div.bannerimg {
+    margin-bottom: 2.5em;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -81,8 +85,8 @@ h3:hover {
 }
 figcaption{
     font-family:itc-officina-sans-pro, italic;
-    font-weight: 200;
-    font-style: normal;
+    font-weight: 100;
+    font-style: italic;
     color: rgb(253, 240, 213);
 }
 
@@ -96,13 +100,14 @@ p {
     font-family:itc-officina-sans-pro,sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.3;
     color: rgb(253, 240, 213);     
 }
 
 div.banner img {
     width: 100%
-    
 }
+
 div.gallery main {
     max-width: 60em;
     margin: 0 auto;
@@ -159,6 +164,17 @@ section ul li input[type="tel"],
 section ul li select {
 	flex: 1 0 30em;
 	box-sizing: border-box;
+}
+
+article {
+    padding: 0em 1em;
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+aside {
+    max-width: 30em;
+    margin: 0 auto;
 }
 
 footer p {
@@ -247,7 +263,11 @@ div.formcontainter {
     }
     
     article {
-        grid-column: 1/4;
+        grid-column: 1/3;
+        max-width: 40em;
+        margin: 0 auto;
+        padding-right: 2em;
+        
     }
     
     div.mainstoryimage{
@@ -282,13 +302,32 @@ div.formcontainter {
         grid-column: 1/4;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1em;
+        grid-gap: 1.5em;
     }
     
     aside {
-        grid-column: 1/4;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-column: 3/4;
+        margin-top: 1.9em;
+/*
+        background: rgb(71, 0, 36);
+        padding: .25em 1em
+*/
+    }
+
+    aside div.rectangleimage {
+        background: rgb(71, 0, 36);
+        padding: .25em 1em
+            
+    }
+        
+    }
+  
+
+    asdie h3 {
+        font-family:itc-officina-sans-pro, italic;
+        font-weight: 100;
+        font-style: normal;
+        color: rgb(253, 240, 213);
     
     }
 
